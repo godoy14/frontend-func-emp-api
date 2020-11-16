@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "deploy:ghdocs": "ng build --prod --output-path docs --base-href /frontend-func-emp-api/"
   },
   "private": true,
   "dependencies": {
