@@ -103,6 +103,12 @@
           "options": {
             "browserTarget": "frontend-emp-api:build"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/frontend-func-emp-api/"
+          }
         }
       }
     }
