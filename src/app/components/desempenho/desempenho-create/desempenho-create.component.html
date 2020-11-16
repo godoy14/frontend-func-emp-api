@@ -1,0 +1,41 @@
+<mat-card>
+    <mat-card-title>Novo Desempenho</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Titulo"
+                [(ngModel)]="desempenho.titulo" name="titulo">
+        </mat-form-field>
+    </form>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Data"
+                [(ngModel)]="desempenho.data" name="data">
+        </mat-form-field>
+    </form>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Descrição"
+                [(ngModel)]="desempenho.descricao" name="descricao">
+        </mat-form-field>
+    </form>
+    <form>
+        <mat-form-field appearence="fill">
+        <mat-label>Funcionário</mat-label>
+        <mat-select [(ngModel)]="desempenho.funcionario" name="funcionario">
+            <mat-option *ngFor="let funcionario of funcionarios"
+            [value]="funcionario">
+                {{funcionario.nome}}
+            </mat-option>
+        </mat-select>
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="createDesempenho()" color="primary">
+        Salvar Desempenho
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+    
+</mat-card>

@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-title>Alterar Desempenho</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Título"
+                [(ngModel)]="desempenho.titulo" name="titulo">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data"
+                [(ngModel)]="desempenho.data" name="data">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descrição"
+                [(ngModel)]="desempenho.descricao" name="descricao">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="updateDesempenho()" color="primary">
+        Atualizar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+    
+</mat-card>

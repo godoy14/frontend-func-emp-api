@@ -1,0 +1,34 @@
+<mat-card>
+    <mat-card-title>Dados Detalhados Funcionário</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Id"
+                [value]="funcionario.id" name="id" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [value]="funcionario.nome" name="nome" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone"
+                [value]="funcionario.telefone" name="telefone" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="E-mail"
+                [value]="funcionario.email" name="email" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Salário"
+                [value]="funcionario.salario" name="salario" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cargo"
+                [value]="funcionario.cargo.nome" name="cargo.nome" disabled>
+        </mat-form-field>
+    </form>    
+
+    <button mat-raised-button (click)="voltar()">
+        Voltar
+    </button>
+    
+</mat-card>

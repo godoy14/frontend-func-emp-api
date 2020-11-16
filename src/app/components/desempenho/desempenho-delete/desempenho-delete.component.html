@@ -1,0 +1,36 @@
+<mat-card>
+    <mat-card-title>Excluir Desempenho</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Titulo"
+                [value]="desempenho.titulo" name="titulo" disabled>
+        </mat-form-field>
+    </form>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Data"
+                [value]="desempenho.data" name="data" disabled>
+        </mat-form-field>
+    </form>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Descrição"
+                [value]="desempenho.descricao" name="descricao" disabled>
+        </mat-form-field>
+    </form>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Funcionário"
+                [value]="desempenho.funcionario.nome" name="funcionario.nome" disabled>
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="deleteDesempenho()" color="warning">
+        Excluir
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+    
+</mat-card>

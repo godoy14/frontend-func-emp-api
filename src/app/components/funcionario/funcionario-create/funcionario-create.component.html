@@ -1,0 +1,38 @@
+<mat-card>
+    <mat-card-title>Novo Funcionário</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [(ngModel)]="funcionario.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone"
+                [(ngModel)]="funcionario.telefone" name="telefone">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="E-mail"
+                [(ngModel)]="funcionario.email" name="email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Salário"
+                [(ngModel)]="funcionario.salario" name="salario">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+        <mat-label> Cargo</mat-label>
+        <mat-select [(ngModel)]="funcionario.cargo" name="cargo">
+            <mat-option *ngFor="let cargo of cargos"
+            [value]="cargo">
+                {{cargo.nome}}
+            </mat-option>
+        </mat-select>
+        </mat-form-field>
+    </form>    
+    <button mat-raised-button (click)="createFuncionario()" color="primary">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+    
+</mat-card>
