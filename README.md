@@ -1,27 +1,31 @@
 # FrontendEmpApi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+# Título
+Gerenciamento de Funcionários em Ambito Empresarial
 
-## Development server
+# Descrição
+Sistema criado para gerenciamento de funcionários,cargos e desempenhos dentro de uma empresa.
+Projeto desenvolvido para auxiliar na prática, estudo e desenvolvimento em Angular e Spring.
+Neste Repositório encontra-se o frontend em Angular da aplicação.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Status do projeto
+Em desenvolvimento ...
 
-## Code scaffolding
+# Features
+- Cadastro de funcionários;
+- Cadastro de cargos;
+- Cadastro de desempenhos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Um cargo so pode ser excluido cago não tenha funcionários o oculpando e funcionários só podem ser excluidos caso não haja desempenhos com seus nomes.
 
-## Build
+# Demonstração da aplicação
+https://godoy14.github.io/frontend-func-emp-api/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Como rodas a aplicação
+Tanto o frontend como o backend da aplicação ja estão hospedados, link fornecido na demonstração da apliacação e no campo Website do repositório.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Tecnologias
+ - Angular;
+ - TypeScript;
+ - HTML;
+ - CSS.
